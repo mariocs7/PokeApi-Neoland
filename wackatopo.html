@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whack a Mole</title>
+    <link rel="stylesheet" href="wackatopo.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Wacka Topo</h1>
+        </header>
+        <header id="header">
+            
+            <nav id="navegador">
+                <button id="botonColor"> 
+                    <img src="https://res.cloudinary.com/dq186ej4c/image/upload/v1682684561/changeColor_tat29q.png" alt="Cambiar a modo de estilo de página" width="70px"/>  
+                </button>
+                <button id="botonConsola" onclick="irAInicio()"> 
+                    <img src="https://res.cloudinary.com/dq186ej4c/image/upload/v1682685633/home_nekvs0.png" alt="Navegar a la página de inicio de la aplicación" id="buttonDashboard" width="70px"/>  
+                </button>
+                <button id="botonLogout" onclick="irAlogin()"> 
+                    <img src="https://res.cloudinary.com/dq186ej4c/image/upload/v1682679055/logout_arz0gw.png" alt="Cerrar sesión" id="buttonLogout" width="70px"/>  
+                </button>
+            </nav>
+        </header>
+    
+        <main>
+            <div class="game-container" id="gameContainer">
+            </div>
+            <div class="info-container">
+                <div class="info-box">
+                    <p>Tiempo restante: <span id="timeLeft">30</span> segundos</p>
+                    <p>Puntuación: <span id="score">0</span></p>
+                </div>
+                <div class="buttons">
+                    <button id="startBtn">Comenzar Juego</button>
+                    <button id="restartBtn">Reiniciar Juego</button>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>© 2024 ProyectoFinal. Todos los derechos reservados a Marius Cesar.</p>
+        </footer>
+    </div>
+    <script src="wackatopo.js"></script>
+</body>
+</html>

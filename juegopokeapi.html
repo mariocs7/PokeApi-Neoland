@@ -1,0 +1,58 @@
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon Search</title>
+    <link rel="stylesheet" href="juegostyles.css">
+</head>
+<body>
+    <header id="header">
+        <h1>Game - PokeApi</h1>
+        
+        <nav id="navegador">
+            <button id="botonColor"> 
+                <img src="https://res.cloudinary.com/dq186ej4c/image/upload/v1682684561/changeColor_tat29q.png" alt="Cambiar a modo de estilo de página" width="70px"/>  
+            </button>
+            <button id="botonConsola" onclick="irAInicio()"> 
+                <img src="https://res.cloudinary.com/dq186ej4c/image/upload/v1682685633/home_nekvs0.png" alt="Navegar a la página de inicio de la aplicación" id="buttonDashboard" width="70px"/>  
+            </button>
+            <button id="botonLogout" onclick="irAlogin()"> 
+                <img src="https://res.cloudinary.com/dq186ej4c/image/upload/v1682679055/logout_arz0gw.png" alt="Cerrar sesión" id="buttonLogout" width="70px"/>  
+            </button>
+        </nav>
+    </header>
+
+    <main id="container">
+        <input type="text" id="searchInput" placeholder="Buscar Pokémon...">
+        <select id="typeFilter">
+            <option value="">Todos los tipos</option>
+            <option value="normal">Normal</option>
+            <option value="fire">Fuego</option>
+            <option value="water">Agua</option>
+            <option value="fighting">Luchador</option>
+            <option value="grass">Hierba</option>
+            <option value="poison">Veneno</option>
+            <option value="rock">Roca</option>
+            <option value="ice">Hielo</option>
+            <option value="bug">Bug</option>
+            <option value="dragon">Dragon</option>
+            <option value="ghost">Fantasma</option>
+            <option value="fairy">Mágico</option>
+        </select>
+        <div id="pokemonContainer"></div>
+        <div id="pagination"></div>
+        <div class="bottoncolor">
+            <button id="toggleBtn">Cambiar Modo</button>
+        </div>
+    </main>
+
+    <footer id="footer">
+        <p> © 2024 ProyectoFinal. Todos los derechos reservados a Marius Cesar.</p>
+    </footer>
+
+    <script src="juegomain.js"></script> 
+</body>
+</html>
